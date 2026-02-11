@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { ImCross } from "react-icons/im";
 import { FaDotCircle } from "react-icons/fa";
-import Listening1Pagination from "../../Pagination/Listening1Pagination/listening1Pagination2020";
+import Listening1Pagination2020 from "../../Pagination/Listening1Pagination2020";
 
 const Listening1Part42024 = () => {
   const [highlight, setHighlight] = useState(false);
@@ -163,9 +163,9 @@ const Listening1Part42024 = () => {
                       {ht}
                     </span>,
                   ]
-                : [p]
+                : [p],
             )
-          : [part]
+          : [part],
       );
     });
     return parts;
@@ -185,8 +185,8 @@ const Listening1Part42024 = () => {
                 lineIdx === currentLine && idx === currentChunk
                   ? "bg-green-200"
                   : highlight && chunkNumber
-                  ? "bg-yellow-100"
-                  : "bg-transparent"
+                    ? "bg-yellow-100"
+                    : "bg-transparent"
               }`}
             >
               {renderText(chunk)}{" "}
@@ -420,7 +420,7 @@ const Listening1Part42024 = () => {
                   <div className="bg-white rounded-lg shadow-lg p-6 w-80 text-center">
                     <h2 className="text-lg font-semibold mb-4">
                       {renderText(
-                        "Are you sure you want to clear all answers?"
+                        "Are you sure you want to clear all answers?",
                       )}
                     </h2>
                     <div className="flex justify-center gap-4">
@@ -538,7 +538,7 @@ const Listening1Part42024 = () => {
                   type="text"
                 />
                 {renderText(
-                  "was absorbed. Trees were unable to take in necessary iron through their roots."
+                  "was absorbed. Trees were unable to take in necessary iron through their roots.",
                 )}
               </li>
 
@@ -563,7 +563,7 @@ const Listening1Part42024 = () => {
                   type="text"
                 />
                 {renderText(
-                  "feed on eucalyptus leaves. They secrete a substance containing sugar; bell-miner birds are attracted by this and keep away other species."
+                  "feed on eucalyptus leaves. They secrete a substance containing sugar; bell-miner birds are attracted by this and keep away other species.",
                 )}
               </li>
 
@@ -575,7 +575,7 @@ const Listening1Part42024 = () => {
               </li>
               <li className="text-lg">
                 {renderText(
-                  "High-frequency bushfires impact vegetation, resulting in the growth of"
+                  "High-frequency bushfires impact vegetation, resulting in the growth of",
                 )}
                 <button
                   onClick={() => toggleButton(35)}
@@ -597,7 +597,7 @@ const Listening1Part42024 = () => {
               </li>
               <li className="text-lg">
                 {renderText(
-                  "Mid-frequency bushfires result in the growth of eucalyptus forests, because they:"
+                  "Mid-frequency bushfires result in the growth of eucalyptus forests, because they:",
                 )}
               </li>
               <li className="text-lg">
@@ -642,7 +642,7 @@ const Listening1Part42024 = () => {
               </li>
               <li className="text-lg">
                 {renderText(
-                  "Low-frequency bushfires result in the growth of '"
+                  "Low-frequency bushfires result in the growth of '",
                 )}
                 <button
                   onClick={() => toggleButton(38)}
@@ -802,7 +802,7 @@ const Listening1Part42024 = () => {
           </div>
         </div>
       </div>
-      <Listening1Pagination></Listening1Pagination>
+      <Listening1Pagination2020></Listening1Pagination2020>
     </div>
   );
 };

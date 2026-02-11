@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { GrClearOption } from "react-icons/gr";
 import { FaDotCircle } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import Listening1Pagination2020 from "../../Pagination/Listening1Pagination/listening1Pagination2020";
+import Listening1Pagination2020 from "../../Pagination/Listening1Pagination2020";
 
 const Listening1Part22020 = () => {
   const [highlight, setHighlight] = useState(false);

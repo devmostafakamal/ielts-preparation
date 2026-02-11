@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { GrClearOption } from "react-icons/gr";
 import { IoIosArrowDown } from "react-icons/io";
-import Listening1Pagination2020 from "../Pagination/Listening1Pagination/listening1Pagination2020";
+
 import { ImCross } from "react-icons/im";
 import { FaDotCircle } from "react-icons/fa";
+import Listening1Pagination2020 from "../Pagination/Listening1Pagination2020";
 
 const Test1Listening2020 = () => {
   const [highlight, setHighlight] = useState(false);
@@ -307,9 +308,9 @@ const Test1Listening2020 = () => {
                       {ht}
                     </span>,
                   ]
-                : [p]
+                : [p],
             )
-          : [part]
+          : [part],
       );
     });
     return parts;
@@ -329,8 +330,8 @@ const Test1Listening2020 = () => {
                 lineIdx === currentLine && idx === currentChunk
                   ? "bg-green-200"
                   : highlight && chunkNumber
-                  ? "bg-yellow-100"
-                  : "bg-transparent"
+                    ? "bg-yellow-100"
+                    : "bg-transparent"
               }`}
             >
               {renderText(chunk)}{" "}
@@ -561,7 +562,7 @@ const Test1Listening2020 = () => {
                   <div className="bg-white rounded-lg shadow-lg p-6 w-80 text-center">
                     <h2 className="text-lg font-semibold mb-4">
                       {renderText(
-                        "Are you sure you want to clear all answers?"
+                        "Are you sure you want to clear all answers?",
                       )}
                     </h2>
                     <div className="flex justify-center gap-4">
@@ -662,7 +663,7 @@ const Test1Listening2020 = () => {
             <ul className="list-disc list-inside space-y-3">
               <li className="text-lg">
                 {renderText(
-                  "Clerical and admin roles, mainly in the finance industry"
+                  "Clerical and admin roles, mainly in the finance industry",
                 )}
               </li>
               <li className="text-lg">
@@ -823,7 +824,7 @@ const Test1Listening2020 = () => {
                 />
                 <span>
                   {renderText(
-                    "you receive at interview will benefit you. Will get access to vacancies which are not advertised."
+                    "you receive at interview will benefit you. Will get access to vacancies which are not advertised.",
                   )}
                 </span>
               </li>
