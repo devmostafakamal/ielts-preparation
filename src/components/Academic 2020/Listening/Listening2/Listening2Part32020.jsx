@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import { IoIosArrowDown } from "react-icons/io";
 import { GrClearOption } from "react-icons/gr";
-import Listening1Pagination from "../../Pagination/Listening1Pagination/listening1Pagination2020";
 import { FaChevronDown, FaDotCircle } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import Listening2Pagination2020 from "../../Pagination/Listening2Pagination/Listening2Pagination2020";
@@ -365,7 +364,7 @@ const Listening2Part32020 = () => {
     ],
   ];
   const [selectedOptions, setSelectedOptions] = useState(
-    Array(questions.length).fill(null)
+    Array(questions.length).fill(null),
   );
   const handleOptionClick = (qIndex, option) => {
     const updatedOptions = [...selectedOptions];
@@ -422,9 +421,9 @@ const Listening2Part32020 = () => {
                       {ht}
                     </span>,
                   ]
-                : [p]
+                : [p],
             )
-          : [part]
+          : [part],
       );
     });
     return parts;
@@ -444,8 +443,8 @@ const Listening2Part32020 = () => {
                 lineIdx === currentLine && idx === currentChunk
                   ? "bg-green-200"
                   : highlight && chunkNumber
-                  ? "bg-yellow-100"
-                  : "bg-transparent"
+                    ? "bg-yellow-100"
+                    : "bg-transparent"
               }`}
             >
               {renderText(chunk)}{" "}
@@ -697,7 +696,7 @@ const Listening2Part32020 = () => {
                   <div className="bg-white rounded-lg shadow-lg p-6 w-80 text-center">
                     <h2 className="text-lg font-semibold mb-4">
                       {renderText(
-                        "Are you sure you want to clear all answers?"
+                        "Are you sure you want to clear all answers?",
                       )}
                     </h2>
                     <div className="flex justify-center gap-4">
@@ -784,7 +783,7 @@ const Listening2Part32020 = () => {
 
               <h3 className="text-lg mb-5">
                 {renderText(
-                  "What topic do Cathy and Graham choose to illustrate with each novel?"
+                  "What topic do Cathy and Graham choose to illustrate with each novel?",
                 )}{" "}
                 <br /> <br />
                 {renderText("Choose the correct letter,  ")}{" "}
