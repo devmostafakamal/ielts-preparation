@@ -614,7 +614,7 @@ import Reading3Part22013 from "../components/Academic 2013/Parts/Reading3Part220
 import Reading3Part32013 from "../components/Academic 2013/Parts/Reading3Part32013";
 import Reading4Part22013 from "../components/Academic 2013/Parts/Reading4Part22013";
 import Reading4Part32013 from "../components/Academic 2013/Parts/Reading4Part32013";
-import Listening1Pagination2020 from "../components/Academic 2020/Pagination/Listening1Pagination/listening1Pagination2020";
+import Listening1Pagination2020 from "../components/Academic 2020/Pagination/Listening1Pagination/Listening1Pagination2020";
 
 export const router = createBrowserRouter([
   {
