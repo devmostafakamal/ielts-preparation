@@ -2,11 +2,11 @@ import React from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link, useLocation } from "react-router";
 
-const Listening1Pagination = () => {
+const Listening1Pagination2020 = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const sideButtonsList = ["Listening","Reading", "Writing", "Speaking"];
+  const sideButtonsList = ["Listening", "Reading", "Writing", "Speaking"];
 
   const [leftIndex, setLeftIndex] = React.useState(0);
   const [rightIndex, setRightIndex] = React.useState(2);
@@ -25,10 +25,10 @@ const Listening1Pagination = () => {
 
   const rotateRight = () => {
     setLeftIndex(
-      (prev) => (prev - 1 + sideButtonsList.length) % sideButtonsList.length
+      (prev) => (prev - 1 + sideButtonsList.length) % sideButtonsList.length,
     );
     setRightIndex(
-      (prev) => (prev - 1 + sideButtonsList.length) % sideButtonsList.length
+      (prev) => (prev - 1 + sideButtonsList.length) % sideButtonsList.length,
     );
   };
 
@@ -85,4 +85,4 @@ const Listening1Pagination = () => {
   );
 };
 
-export default Listening1Pagination;
+export default Listening1Pagination2020;
